@@ -1,0 +1,133 @@
+1  vim jenkins.sh
+    2  ./jenkins.sh
+    3  chmod +x jenkins.sh
+    4  ./jenkins.sh
+    5  mvn -v
+    6  cat /var/lib/jenkins/secrets/initialAdminPassword
+    7  cd /var/lib/jenkins
+    8  ll
+    9  cd workspace
+   10  ll
+   11  cd jenkins
+   12  ll
+   13  cd webapp
+   14  ll
+   15  cd target
+   16  ll
+   17  cd
+   18  ssh-keygen
+   19  cd .ssh/
+   20  vim authorized_keys
+   21  cat id_rsa.pub
+   22  cd /var/lib/jenkins/workspace/jenkins/webapp
+   23  ll
+   24  cd target
+   25  ll
+   26  scp webapp.war root@172.31.13.93:/webapp
+   27  cd
+   28  cd webapp/
+   29  cd /webapp
+   30  ls
+   31  scp webapp.war root@172.31.13.93:/apache-tomcat-9.0.111/webapp
+   32  cd /var/lib/jenkins/workspace/jenkins/webapp
+   33  ll
+   34  cd target
+   35  ll
+   36  scp webapp.war root@172.31.13.93:/apache-tomcat-9.0.111/webapp
+   37  scp webapp.war root@172.31.13.93:/apache-tomcat-9.0.111
+   38  scp webapp.war root@172.31.13.93:/apache-tomcat-9.0.111/webapps/ROOT.war
+   39  scp webapp.war root@172.31.13.93:/apache-tomcat-9.0.111/webapps/
+   40  cd
+   41  ssh root@172.31.13.93
+   42  scp webapp.war root@172.31.13.93:/opt/apache-tomcat-9.0.111/webapps/ROOT.war
+   43  cd /var/lib/jenkins/workspace/jenkins/webapp
+   44  cd target
+   45  scp webapp.war root@172.31.13.93:/opt/apache-tomcat-9.0.111/webapps/ROOT.war
+   46  scp webapp.war root@172.31.13.93:/opt
+   47  scp webapp.war root@172.31.13.93:root/apache-tomcat-9.0.111/webapps/ROOT.war
+   48  ll
+   49  cd
+   50  systemctl restart jenkins
+   51  systemctl enable jenkins
+   52  cd /var/lib/jenkins/workspace/jenkins/webapp
+   53  cd target
+   54  pwd
+   55  exit
+   56  hostnamectl-set-hostname jenkins.example.com
+   57  hostnamectl set-hostname jenkins.example.com
+   58  bash
+   59  exit
+   60  jenkins --version
+   61  mvn -v
+   62  hostnamectl set-hostname jenkins.example.com
+   63  sudo nano /etc/ssh/sshd_config
+   64  bash
+   65  vim /etc/ssh/sshd_config
+   66  systemctl restart sshd
+   67  systemctl enable sshd
+   68  systemctl start jenkins
+   69  systemctl restart sshd
+   70  systemctl enable sshd
+   71  systemctl start jenkins
+   72  sudo lsof -i :8080
+   73  sudo nano /etc/default/jenkins
+   74  systemctl start jenkins
+   75  systemctl restart sshd
+   76  systemctl enable sshd
+   77  systemctl restart jenkins
+   78  sudo yum install jenkins -y
+   79  sudo systemctl enable jenkins
+   80  sudo systemctl start jenkins
+   81  sudo chown -R jenkins:jenkins /var/lib/jenkins
+   82  sudo systemctl start jenkins
+   83  systemctl status jenkins.service
+   84  java -version
+   85  yum update -y
+   86  yum install openjdk-11-jdk -y
+   87  sudo yum install java-11-amazon-corretto -y
+   88  sudo nano /etc/sysconfig/jenkins
+   89  sudo vim /etc/sysconfig/jenkins
+   90  sudo nano /etc/sysconfig/jenkins
+   91  ``
+   92  sudo systemctl restart jenkins
+   93  java -version
+   94  systemctl status jenkins.service
+   95  systemctl status jenkins
+   96  sudo systemctl daemon-reexec
+   97  sudo systemctl restart jenkins
+   98  vim /var/log/jenkins/jenkins.log
+   99  cd /var/log/jenkins/jenkins.log
+  100  cls
+  101  cat /var/log/jenkins/jenkins.log
+  102  clear
+  103  systemctl status jenkins
+  104  systemctl start jenkins
+  105  $ sudo lsof -i :8080
+  106  sudo lsof -i :8080
+  107  sudo vi /etc/default/jenkins
+  108  systemctl restart jenkins
+  109  $ sudo systemctl restart jenkins.service
+  110  sudo systemctl restart jenkins.service
+  111  sudo service jenkins start
+  112  sudo rm -r jenkins.repo
+  113  sudo rm -rf jenkins.repo
+  114  sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  115  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  116  systemctl restart jenkins.service
+  117  sudo rm -rf jenkins.repo
+  118  systemctl stop jenkins
+  119  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  120  systemctl restart jenkins
+  121  yum remove java*
+  122  sudo yum install java-21-amazon-corretto -y
+  123  mvn -v
+  124  sudo yum install maven -y
+  125  sudo yum install git -y
+  126  systemctl status jenkins
+  127  sudo systemctl enable jenkins
+  128  sudo systemctl start jenkins
+  129  cd /var/lib/jenkins
+  130  ll
+  131  vim jenkins.model.JenkinsLocationConfiguration.xml
+  132  systemctl restart jenkins
+  133  systemctl enable jenkins
