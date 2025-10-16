@@ -1,0 +1,42 @@
+1  yum install docker
+    2  systemctl start docker
+    3  systemctl enable docker
+    4  ssh-keygen
+    5  cd .ssh/
+    6  cat id_rsa.pub
+    7  vim authorized_keys
+    8  cd ..
+    9  cd /var/ssh/sshd_config
+   10  vim /var/ssh/sshd_config
+   11  vim /etc/ssh/sshd_config
+   12  systemctl restart sshd
+   13  systemctl enable sshd
+   14  passwd root
+   15  aws configure
+   16  aws ecr create-repository --repository-name tomcat-webapp
+   17  aws configure
+   18  aws ecr create-repository --repository-name tomcat-webapp
+   19  ip a s
+   20  vim /etc/hosts
+   21  ping 172.31.15.224
+   22  mkdir /deploy
+   23  hostnamectl set-hostname docker.example.com
+   24  bash
+   25  systemcl restart docker
+   26  systemctl restart docker
+   27  systemctl enable docker
+   28  cd /deploy
+   29  ll
+   30  vim /etc/ssh/sshd_config
+   31  systemctl restart docker
+   32  systemctl enable docker
+   33  ll
+   34  cd ..
+   35  cd deploy
+   36  ll
+   37  cd
+   38  systemctl restart docker
+   39  systemctl enable docker
+   40  cd docker
+   41  cd deploy
+   42  ll
