@@ -2,7 +2,7 @@
   <div class="container">
     <h1>From Sushanth</h1>
     <h1>I love learn devops</h1>
-    <p>Please fill in this form to create an account. <b>Happy Diwali to everyone</b></p>
+    <p>Please fill in this form to create an account. <b>Happy holidays!!!</b></p>
     <hr>
      
     <label for="Name"><b>Enter Name</b></label>
